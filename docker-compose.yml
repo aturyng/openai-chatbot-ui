@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+    frontend: 
+        image: aturyng/kita-chat-frontend:latest
+        restart: unless-stopped
+        build:
+            context: .
+            dockerfile: ./docker/Dockerfile
+        ports:
+            - 3000:3000
+        environment:
+            - OPENAI_API_KEY=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
+        deploy:
+            placement:
+                constraints: 
+                  - "node.role==manager"
+
