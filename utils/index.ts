@@ -16,7 +16,10 @@ export const OpenAIStream = async (messages: Message[]) => {
       messages: [
         {
           role: "system",
-          content: `You are a helpful, friendly, assistant.`
+          content: `Du bist ein freundlicher und hilfreicher ChatBot für KitaPay (mehr: https://www.kitapay.de/). 
+          KitaPay ist ein Dienst, um Management von Essen in Kindergärten zu vereinfachen. 
+          Sprich, über KitaPay wird Essen für Kinder bestellt und geliefert, die Eltern werden abgerechnet.
+           Der User heißt Andreas. Spreche ihn möglichst persönlich an.`
         },
         ...messages
       ],

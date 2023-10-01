@@ -5,6 +5,7 @@ import { Message } from "@/types";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
+
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -80,7 +81,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Chatbot UI, an AI assistant. I can help you with things like answering questions, providing information, and helping with tasks. How can I help you?`
+        content: `Hallo! Wie kann ich Ihnen bei KitaPay helfen?`
       }
     ]);
   };
@@ -93,18 +94,19 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Chatbot UI, an AI assistant. I can help you with things like answering questions, providing information, and helping with tasks. How can I help you?`
+        content: `Hallo! Wie kann ich Ihnen bei KitaPay helfen?`
       }
     ]);
   }, []);
 
   return (
     <>
-      <Head>
-        <title>Chatbot UI</title>
+      <Head >
+          <title>KIta Chat</title>
+
         <meta
           name="description"
-          content="A simple chatbot starter kit for OpenAI's chat model using Next.js, TypeScript, and Tailwind CSS."
+          content="ChatKI für KitaPay"
         />
         <meta
           name="viewport"
