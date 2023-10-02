@@ -10,7 +10,7 @@ services:
         ports:
             - 3000:3000
         environment:
-            - OPENAI_API_KEY=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
+            - OPENAI_API_KEY=sk-......
         deploy:
             placement:
                 constraints: 
